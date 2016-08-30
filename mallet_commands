@@ -1,0 +1,5 @@
+D:\NEU\Sem 2 - Summer\IR\Assignment\CS6200_Tirthraj_Parmar\Clustering and Topic Models\Data\AP_DATA
+
+mallet import-dir --input D:\AP_DATA --output D:\output.mallet --keep-sequence --remove-stopwords
+
+mallet train-topics --input D:\output.mallet --num-topics 200 --output-state topic-state.gz  --output-topic-keys output_keys.txt --output-doc-topics output_composition.txt
